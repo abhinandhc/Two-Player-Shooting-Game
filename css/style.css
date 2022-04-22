@@ -1,0 +1,116 @@
+/* body styling */
+body {
+    display: grid;
+    text-align: center;
+    background-image: url(../images/bg.jpg);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    color: white;
+}
+
+/* navbar styling */
+.navbar {
+    padding: 1.5rem;
+    position: fixed;
+    margin-right: auto;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    z-index: 1;
+}
+
+span {
+    margin-left: auto;
+    padding-right: 1rem;
+}
+
+/* health bar section styling */
+
+::-webkit-meter-optimum-value {
+    background-color: green;
+}
+
+::-webkit-meter-suboptimum-value {
+    background-color: gold;
+}
+
+::-webkit-meter-even-less-good-value {
+    background-color: orange;
+}
+
+::-webkit-less-value {
+    background-color: red;
+}
+
+.ground {
+    margin-top: 25%;
+}
+
+/* game rounds styling */
+.game-round {
+    display: none;
+    margin-top: 3rem;
+}
+
+.game-round-active {
+    display: block;
+}
+
+/* Main headings styling*/
+#mainheading {
+    font-family: 'Tapestry', cursive;
+}
+
+h2,
+h3 {
+    font-family: 'Cinzel', serif;
+}
+
+.players {
+    font-family: 'Bebas Neue', cursive;
+}
+
+/* player image styling */
+img {
+    width: 150px;
+    height: 200px;
+    mix-blend-mode: multiply;
+}
+
+.player2 {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+/* button styling */
+.btn {
+    background-color: red;
+    font-family: 'Cinzel', serif;
+    color: white;
+}
+
+.btn:focus {
+    border: 1px solid brown;
+}
+
+/* media query */
+@media screen and (max-width:900px) {
+
+    .navbar {
+        height: 40%;
+        font-size: medium;
+    }
+
+    .ground {
+        margin-top: 50%;
+    }
+
+    img {
+        width: 75px;
+        height: 100px;
+    }
+}
