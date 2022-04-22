@@ -93,10 +93,6 @@ img {
     color: white;
 }
 
-.btn:focus {
-    border: 1px solid brown;
-}
-
 /* media query */
 @media screen and (max-width:900px) {
 
@@ -112,5 +108,12 @@ img {
     img {
         width: 75px;
         height: 100px;
+        mix-blend-mode: multiply;
+    }
+}
+
+@media screen and (max-width:500px) {
+    body {
+        background: url(../images/bgsm.jpg);
     }
 }
