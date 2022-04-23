@@ -117,4 +117,8 @@ img {
     .ground {
         margin-top: 60%;
     }
+
+    img {
+        mix-blend-mode: multiply;
+    }
 }
