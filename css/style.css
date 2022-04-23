@@ -30,24 +30,14 @@ span {
 
 /* health bar section styling */
 
-::-webkit-meter-optimum-value {
-    background-color: green;
-}
-
-::-webkit-meter-suboptimum-value {
-    background-color: gold;
-}
-
-::-webkit-meter-even-less-good-value {
-    background-color: orange;
-}
-
-::-webkit-less-value {
-    background-color: red;
+meter::-webkit-meter-optimum-value {
+    box-shadow: 0 5px 5px -5px #999 inset;
+    background-image: linear-gradient(90deg, #f81606 var(--error), #e7cf1b var(--warning), #23d329 var(--ok));
+    background-size: 100% 100%;
 }
 
 .ground {
-    margin-top: 25%;
+    margin-top: 15%;
 }
 
 /* game rounds styling */
@@ -95,6 +85,11 @@ img {
 
 /* media query */
 @media screen and (max-width:900px) {
+    body {
+        background: url(../images/bgmb.jpg) fixed center;
+        width: 100%;
+        height: 100%;
+    }
 
     .navbar {
         height: 40%;
@@ -102,7 +97,7 @@ img {
     }
 
     .ground {
-        margin-top: 65%;
+        margin-top: 35%;
     }
 
     img {
@@ -114,6 +109,12 @@ img {
 
 @media screen and (max-width:500px) {
     body {
-        background: url(../images/bgsm.jpg);
+        background: url(../images/bgmb.jpg) fixed center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .ground {
+        margin-top: 42%;
     }
 }
